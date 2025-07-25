@@ -52,13 +52,14 @@ Login via Keycloak
 Start chat, send messages, and upload media
 📚 Related Documents
 
-📄 High-Level Design:
+📄 High-Level Design:https://docs.google.com/document/d/1WUpk5mMqHzNKqAivJcYlCy-i4IyJB8DH/edit?usp=drive_link&ouid=111893845994614487139&rtpof=true&sd=true
 
-📄 Low-Level Design:
+📄 Low-Level Design:https://docs.google.com/document/d/1y7wqpK8nASuLNcCznbKeDVn2xsiRl6AI/edit?usp=drive_link&ouid=111893845994614487139&rtpof=true&sd=true
 
-📄 API Spec: OpenAPI.txt
+📄 Detailed project report: https://docs.google.com/presentation/d/1rBfjLJzKtBT3643JM2BiQwjDp6JWO4FG/edit?usp=drive_link&ouid=111893845994614487139&rtpof=true&sd=true
+📄 open-api doc: available in the repo with name apisec.json 
 
-📄 Demo Video: YouTube Link
+📄 Demo Video: https://youtu.be/PSZB-KjHbCU
 
 👨‍💻 Contributors Developed with ❤ by the Baatchit Dev Team: Soham Arora
 

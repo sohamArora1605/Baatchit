@@ -1,0 +1,32 @@
+<div class="card p-3 shadow rounded">
+  <h5>🌍 Translation Settings</h5>
+
+  <div class="form-check form-switch my-2">
+    <input
+      class="form-check-input"
+      type="checkbox"
+      id="enableToggle"
+      [(ngModel)]="settings.enabled"
+    />
+    <label class="form-check-label" for="enableToggle">
+      Enable Message Translation
+    </label>
+  </div>
+
+  <div *ngIf="settings.enabled" class="mb-2">
+    <label for="languageSelect">Preferred Language:</label>
+    <select
+      class="form-select mt-1"
+      id="languageSelect"
+      [(ngModel)]="settings.preferredLanguage"
+    >
+      <option *ngFor="let lang of languages" [value]="lang">{{ lang }}</option>
+    </select>
+  </div>
+
+  <button class="btn btn-primary mt-2" (click)="save()">💾 Save</button>
+
+  <div *ngIf="success" class="alert alert-success mt-2">
+    Settings saved!
+  </div>
+</div>

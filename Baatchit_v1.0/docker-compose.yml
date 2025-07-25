@@ -1,0 +1,39 @@
+version: '3.9'
+
+services:
+  mysql-kc:
+    image: mysql:8.0
+    container_name: mysql-kc
+    restart: unless-stopped
+    ports:
+      - "3377:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: baatchit
+      MYSQL_USER: soham
+      MYSQL_PASSWORD: password
+      MYSQL_ROOT_HOST: '%'
+    volumes:
+      - mysql-data:/var/lib/mysql
+    networks:
+      - keycloak-network
+
+  keycloak:
+    image: quay.io/keycloak/keycloak:25.0.0
+    container_name: keycloakcontainer
+    command: start-dev
+    restart: unless-stopped
+    ports:
+      - "9081:8080"
+    environment:
+      KEYCLOAK_ADMIN: admin
+      KEYCLOAK_ADMIN_PASSWORD: admin@1234
+      KC_HOSTNAME: localhost
+    networks:
+      - keycloak-network
+
+volumes:
+  mysql-data:
+
+networks:
+  keycloak-network:

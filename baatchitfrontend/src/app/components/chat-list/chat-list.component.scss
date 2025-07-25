@@ -1,0 +1,94 @@
+.enhanced-chat-sidebar {
+  border-radius: 0 0 1rem 1rem;
+}
+
+.hover-scale {
+  transition: transform 0.2s ease;
+  &:hover {
+    transform: scale(1.2);
+  }
+}
+
+.hover-bg {
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: #f5f7fa;
+  }
+}
+
+.chat-list .chat-item {
+  cursor: pointer;
+}
+
+.user-img img {
+  object-fit: cover;
+  border: 2px solid #dee2e6;
+}
+
+.msg-date {
+  font-size: 0.75rem;
+  color: #6c757d;
+
+  &.unread {
+    color: #1fa855;
+    font-weight: 600;
+  }
+}
+
+.unread-msg-badge {
+  background: #1fa855;
+  color: #fff;
+  min-width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  font-size: 0.75em;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-box {
+  background: #f9fafb;
+  border-radius: 10px;
+}
+
+.search-input-group {
+  display: flex;
+  align-items: center;
+  background: white;
+  border: 1px solid #dee2e6;
+  border-radius: 10px;
+  padding: 5px 10px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.search-icon {
+  color: #aaa;
+  margin-right: 8px;
+  font-size: 1rem;
+}
+
+.search-input {
+  border: none;
+  outline: none;
+  flex: 1;
+  padding: 4px 6px;
+  font-size: 0.9rem;
+  background: transparent;
+}
+
+.search-btn {
+  background-color: #1d4ed8;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  font-size: 0.85rem;
+  border-radius: 6px;
+  transition: background-color 0.2s ease;
+
+  &:hover {
+    background-color: #1e40af;
+  }
+  
+}
